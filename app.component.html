@@ -1,0 +1,53 @@
+<div class="container">
+  <h1>
+    Escoje el color
+  </h1>
+  <!--vista1 del paginador-->
+  <div class="" id="anterior">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let mValores of multiplicaValores">
+        <div class="colorCont" [style.background-color]="mValores.color"(click)="copiarValor(mValores.color)">
+          <div class="anio">
+            <p>{{mValores.year}}</p>
+          </div>
+          <div class="info">
+            <h2>{{mValores.name}}</h2>
+            <span class="codigoH">{{mValores.color}}</span>
+          </div>
+          <div class="ref">
+            <p>{{mValores.pantone_value}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--vista1 del paginador-->
+
+
+  <!--vista2 del paginador-->
+  <div class="" id="siguiente" style="display:none">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" *ngFor="let mValores2 of multiplicaValores2">
+        <div class="colorCont" [style.background-color]="mValores2.color" (click)="copiarValor(mValores2.color)">
+          <div class="anio">
+            <p>{{mValores2.year}}</p>
+          </div>
+          <div class="info">
+            <h2>{{mValores2.name}}</h2>
+            <span class="codigoH">{{mValores2.color}}</span>
+          </div>
+          <div class="ref">
+            <p>{{mValores2.pantone_value}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--vista2 del paginador-->
+
+  <ul class="paginador">
+    <li id='btnsiguiente' (click)="roller('siguiente')">Siguiente</li>
+  </ul>
+</div>
+

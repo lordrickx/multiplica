@@ -1,0 +1,106 @@
+@import 'fuentes';
+@import 'reset';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~flexboxgrid/css/flexboxgrid.min.css';
+
+
+.tittle{
+	font-family: $font1;
+}
+h1{
+	font-family: $font1;
+	text-align: center;
+	font-size: $f-grande;
+	padding: 30px 0;
+	font-weight: $f-strong;
+}
+h2{
+font-family: $font1;
+font-size: $f-normal;
+font-weight: $f-strong;
+}
+
+.contenedor{
+    display:flex;
+    flex-wrap:wrap;
+}
+.elemento{
+    width:25%;
+}
+.colorCont{
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	cursor: pointer;
+	margin-bottom: 30px;
+  transition: transform .2s;
+	p, span{
+		font-family: $font2;
+		font-size: $f-pequena;
+	}
+	.ref{
+		text-align: right;
+	}
+	.info{
+		text-align: center;
+		padding: 15px 0;
+	}
+	h2{
+		padding: 10px 0;
+		text-transform: capitalize;
+	}
+}
+.colorCont:hover {
+    transform: scale(1.1);
+}
+.pant{
+	/*display: none;*/
+}
+
+.paginador{
+	width: 100%;
+	font-family: $font1;
+	font-size: $f-normal;
+	font-weight: $f-strong;
+	display: inline-block;
+	li{
+		width: 145px;
+		cursor: pointer;
+		padding: 0 15px;
+	}
+}
+#btnsiguiente{
+		float: right;
+		text-align: right;
+		span{
+			float: left;
+			display: block;
+			padding-right: 10px;
+		}
+	}
+	.anterior{
+		float: left;
+		text-align: left;
+		span{
+			float: right;
+			display: block;
+			padding-left: 10px;
+		}
+	}
+
+#myDIV{
+	position: absolute;
+    top: 18%;
+    left: 0;
+    width: 88%;
+    height: 100px;
+    display: none;
+    margin: 0 auto;
+    float: none;
+    right: 0;
+	h2{
+		text-align: center;
+		line-height: 100px;
+	}
+}
+
